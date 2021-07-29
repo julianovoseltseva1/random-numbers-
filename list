@@ -1,0 +1,16 @@
+import random
+
+even_sum = 0
+odd_sum = 0
+
+random_numbers = [random.randint(10, 90) for x in range(10)]
+
+for number in random_numbers:
+    if number % 2 == 0:
+        even_sum += number
+    else:
+        odd_sum += number
+
+print("Final sum of even numbers:", even_sum)
+print("Final sum of odd numbers:", odd_sum)
+
